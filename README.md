@@ -8,7 +8,7 @@ Este é um projeto de estudo focado na criação de um website institucional par
 
 O projeto foi construído utilizando as bases do desenvolvimento Front-end:
 
-HTML5: Utilizado para estruturar o conteúdo das páginas com foco em semântica (uso de <header>, <main>, <section>, <article>, <form>, etc.).
+HTML5: Utilizado para estruturar o conteúdo das páginas com foco em semântica.
 
 ---
 
