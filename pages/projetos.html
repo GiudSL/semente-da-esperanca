@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos, Voluntariado e Doação | Semente da Esperança</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <meta name="description" content="Conheça nossos projetos sociais, descubra oportunidades de voluntariado e faça uma doação online.">
+    <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Barra de navegação -->
+    <header class="header">
+        <div class="container header__content">
+            <a href="../index.html" class="logo" aria-label="Semente da Esperança - Voltar para o início">Semente da Esperança</a>
+
+            <!-- Menu -->
+            <nav class="nav" id="main-nav">
+                <button class="menu-toggle" aria-controls="menu-list" aria-expanded="false" aria-label="Abrir menu de navegação">
+                    <span class="hamburguer"></span>
+                </button>
+                <ul class="nav__list" id="menu-list" aria-expanded="false">
+                    <li class="nav__item"><a href="../index.html" class="nav__link">Início</a></li>
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="projetos.html" class="nav__link active nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true" role="button">Projetos & Ações <span class="arrow-down" aria-hidden="true"></span></a>
+                        <ul class="submenu" aria-label="Submenu Projetos e Ações">
+                            <li><a href="#projetos" class="submenu__link">Nossos Projetos</a></li>
+                            <li><a href="#voluntariado" class="submenu__link">Seja Voluntário</a></li>
+                            <li><a href="#doacoes" class="submenu__link">Faça uma Doação</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="cadastro.html" class="nav__link">Cadastre-se</a></li>
+                    <li class="nav__item nav__item--cta"><a href="#" class="nav__link button button--primary">Área Admin / Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <div class="grid-layout container">
+            
+            <section id="projetos" class="section grid-col-span-12" aria-labelledby="projetos-title">
+
+                <!-- Titulo/sub-projetos -->
+                <h1 id="projetos-title" class="section__title text-center">Conheça Nossos Projetos de Impacto Social</h1>
+                <p class="lead text-center">Projetos detalhados com indicadores de impacto. Acesse para saber mais!</p>
+
+                <div class="grid-layout grid-layout--3-cols">
+
+                    <!-- Projeto 1 -->
+                    <article class="card card--project grid-col-span-12 grid-col-span-6@tablet grid-col-span-4@desktop">
+                        <div class="card__media">
+                            <img src="../assets/img/kids.jpg" alt="Crianças estudando em um centro comunitário." loading="lazy">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__badges">
+                                <span class="badge badge--success">Educação</span>
+                                <span class="badge badge--primary">Novo</span>
+                            </div>
+                            <h3 class="card__title">Projeto Futuro Brilhante</h3>
+                            <p>Foco na alfabetização e reforço escolar para mais de 200 crianças em situação de vulnerabilidade.</p>
+                            <div class="card__metrics">
+                                <p><strong>Impacto:</strong> +5.000 horas de aula.</p>
+                            </div>
+                            <a href="#" class="button button--primary">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 2 -->
+                    <article class="card card--project grid-col-span-12 grid-col-span-6@tablet grid-col-span-4@desktop">
+                        <div class="card__media">
+                            <img src="../assets/img/food.jpg" alt="Voluntários distribuindo refeições." loading="lazy">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__badges">
+                                <span class="badge badge--warning">Alimentação</span>
+                                <span class="badge badge--secondary">Saúde</span>
+                            </div>
+                            <h3 class="card__title">Mesa Cheia</h3>
+                            <p>Distribuição semanal de cestas básicas e refeições para famílias de baixa renda.</p>
+                            <div class="card__metrics">
+                                <p><strong>Meta:</strong> 1.000 cestas/mês.</p>
+                            </div>
+                            <a href="#" class="button button--primary">Ver Detalhes</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Projeto 3 -->
+                    <article class="card card--project grid-col-span-12 grid-col-span-6@tablet grid-col-span-4@desktop">
+                         <div class="card__media">
+                            <img src="../assets/img/tree.jpg" alt="Voluntários plantando árvores." loading="lazy">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__badges">
+                                <span class="badge badge--info">Meio Ambiente</span>
+                            </div>
+                            <h3 class="card__title">Verde Urbano</h3>
+                            <p>Iniciativa de reflorestamento e conscientização ambiental em áreas urbanas degradadas.</p>
+                            <div class="card__metrics">
+                                <p><strong>Resultados:</strong> +500 árvores plantadas.</p>
+                            </div>
+                            <a href="#" class="button button--primary">Ver Detalhes</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Voluntariado -->
+            <section id="voluntariado" class="section section--volunteer grid-col-span-12" aria-labelledby="voluntariado-title">
+                <h2 id="voluntariado-title" class="section__title text-center">Seja um Voluntário Transformador</h2>
+                <div class="grid-layout grid-layout--2-cols">
+                    <div class="grid-col-span-12 grid-col-span-6@tablet">
+                        <p class="lead">Descubra as oportunidades abertas e contribua com seu tempo e talento. Você pode fazer a diferença!</p>
+                        <p>Temos vagas em diversas áreas: educação, saúde, administrativa, comunicação e eventos. Oferecemos certificado digital de participação após a conclusão do projeto.</p>
+                        <ul class="list-checked">
+                            <li>Portal de Oportunidades em tempo real</li>
+                            <li>Sistema de Inscrição e Seleção simplificado</li>
+                            <li>Área do Voluntário (histórico e certificados)</li>
+                        </ul>
+
+                        <!-- Ação -->
+                        <a href="cadastro.html" class="button button--secondary button--large">Quero Ser Voluntário!</a>
+                    </div>
+                    <div class="grid-col-span-12 grid-col-span-6@tablet">
+                        <img src="../assets/img/smile.jpg" alt="Pessoa sorrindo e ajudando em atividade de voluntariado." class="responsive-media" loading="lazy">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Doações -->
+            <section id="doacoes" class="section section--donation grid-col-span-12" aria-labelledby="doacoes-title">
+                <h2 id="doacoes-title" class="section__title text-center">Sua Doação Transforma Vidas</h2>
+                <div class="grid-layout grid-layout--2-cols">
+                    <div class="grid-col-span-12 grid-col-span-6@tablet">
+                        <p class="lead">Com seu apoio, garantimos a continuidade de todos os nossos projetos sociais. Toda ajuda conta!</p>
+                        <form action="#" method="POST" class="form">
+                            <div class="form__group">
+                                <legend class="form__legend">Valor da Doação (R$)</legend>
+
+                                <!-- Valores -->
+                                <div class="form__row form__row--donation">
+                                    <label class="radio-card" role="radio" aria-checked="false" tabindex="0">
+                                        R$ 25
+                                        <input type="radio" name="valor_doacao" value="25" hidden>
+                                    </label>
+                                    <label class="radio-card" role="radio" aria-checked="false" tabindex="0">
+                                        R$ 50
+                                        <input type="radio" name="valor_doacao" value="50" hidden>
+                                    </label>
+                                    <label class="radio-card" role="radio" aria-checked="false" tabindex="0">
+                                        R$ 100
+                                        <input type="radio" name="valor_doacao" value="100" hidden>
+                                    </label>
+                                    <div class="radio-card">
+                                        <label for="outro_valor" class="sr-only">Outro Valor</label>
+                                        <input type="number" id="outro_valor" name="outro_valor" placeholder="Outro Valor" min="10" class="input-inline">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form__control">
+                                <button type="submit" class="button button--primary button--large">Doar Agora (Pagamento Seguro)</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Camapnha atual -->
+                    <div class="grid-col-span-12 grid-col-span-6@tablet donation-metrics">
+                        <h3>Campanha "Volta às Aulas"</h3>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar__fill" style="width: 75%;"></div>
+                        </div>
+                        <p><strong>Meta:</strong> R$ 20.000 | <strong>Arrecadado:</strong> R$ 15.000 (75%)</p>
+                        <a href="#" class="link-transparency">Relatórios de Prestação de Contas</a>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </main>
+    
+   <footer class="footer">
+        <div class="container">
+            <div class="footer__content grid-layout grid-layout--3-cols">
+                <div class="footer__col grid-col-span-12 grid-col-span-4@tablet">
+                    <h3>Contato</h3>
+                    <address>
+                        <p>Rua da Ação, 123 - Bairro Solidário</p>
+                        <p>CEP: 01234-567 - Esperança/UF</p>
+                        <p>Telefone: <a href="tel:5511999999999">(11) 99999-9999</a></p>
+                        <p>Email: <a href="mailto:sementedaesperanca@ong.org">sementedaesperanca@ong.org</a></p>
+                    </address>
+                </div>
+
+                <div class="footer__col grid-col-span-12 grid-col-span-4@tablet">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="projetos.html#voluntariado">Voluntariado</a></li>
+                        <li><a href="projetos.html#doacoes">Doações</a></li>
+                        <li><a href="#">Área de Imprensa</a></li>
+                    </ul>
+                </div>
+
+                 <div class="footer__col grid-col-span-12 grid-col-span-4@tablet">
+                    <h3>Siga-nos</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Acompanhe-nos no Facebook" class="social-icon">F</a>
+                        <a href="#" aria-label="Acompanhe-nos no Instagram" class="social-icon">I</a>
+                        <a href="#" aria-label="Acompanhe-nos no LinkedIn" class="social-icon">L</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                 <p>&copy; 2026 Semente da Esperança. Todos os direitos reservados. | <a href="#">Política de Privacidade</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="" defer></script>
+</body>
+</html>
