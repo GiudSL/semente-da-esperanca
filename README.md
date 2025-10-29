@@ -6,7 +6,7 @@ Este é um projeto de estudo focado na criação de um website institucional par
 
 ## 🛠️ Tecnologias Utilizadas
 
-- *HTML5:* Estrutura semântica utilizando elementos como <header>, <main>, <section>, <form> e <article>. Implementação de atributos de Acessibilidade (A11Y) como aria-labelledby, role e a classe .sr-only.
+- *HTML5:* Estrutura semântica utilizando elementos como header, main, section, form e article. Implementação de atributos de Acessibilidade (A11Y) como aria-labelledby, role e a classe .sr-only.
 
 - *CSS:* CSS Variables (:root): Uso de variáveis para cores (--color-primary, --color-secondary), tipografia, espaçamento e breakpoints. Layout Responsivo: Implementação de um sistema de Grid Layout de 12 colunas (.grid-layout) com breakpoints (@tablet, @desktop) definidos em media queries.
 
