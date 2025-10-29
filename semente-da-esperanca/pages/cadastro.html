@@ -4,84 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro | Semente da Esperança</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <meta name="description" content="Página de cadastro para voluntários, doadores e apoiadores. Preencha seus dados para se juntar à causa.">
     <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <header class="">
+    <header class="header">
         </header>
 
-    <main id="">
-        <div class="">
-            <section class="" aria-labelledby="cadastro-title">
-                <h1 id="cadastro-title" class="">Junte-se a Nós! Cadastro de Apoio</h1>
-                <p class="">Preencha o formulário para se tornar um voluntário, doador ou apoiador.</p>
+    <main id="main-content">
+        <div class="grid-layout container">
+            <section class="section grid-col-span-12" aria-labelledby="cadastro-title">
+                <h1 id="cadastro-title" class="section__title text-center">Junte-se a Nós! Cadastro de Apoio</h1>
+                <p class="lead text-center">Preencha o formulário para se tornar um voluntário, doador ou apoiador.</p>
 
-                <form id="" class="" novalidate aria-live="polite">
+                <form id="cadastro-form" class="form" novalidate aria-live="polite">
                     
                     <!-- Info pessoal -->
-                    <fieldset class="">
-                        <legend class="">Informações Pessoais (Obrigatório)</legend>
+                    <fieldset class="form__group grid-layout">
+                        <legend class="form__legend">Informações Pessoais (Obrigatório)</legend>
                         
-                        <div class="">
+                        <div class="form__control grid-col-span-12 grid-col-span-6@desktop">
                             <label for="nome">Nome Completo</label>
                             <input type="text" id="nome" name="nome" placeholder="Seu nome e sobrenome" required minlength="5" autocomplete="name" aria-describedby="nome-help">
-                            <span class="" id="nome-help">O nome completo é obrigatório e deve ter no mínimo 5 caracteres.</span>
+                            <span class="form__error-message" id="nome-help">O nome completo é obrigatório e deve ter no mínimo 5 caracteres.</span>
                         </div>
 
-                        <div class="">
+                        <div class="form__control grid-col-span-12 grid-col-span-6@desktop">
                             <label for="email">E-mail</label>
                             <input type="email" id="email" name="email" placeholder="email@exemplo.com" required autocomplete="email" aria-describedby="email-help">
-                            <span class="" id="email-help">Informe um e-mail válido para contato.</span>
+                            <span class="form__error-message" id="email-help">Informe um e-mail válido para contato.</span>
                         </div>
 
-                        <div class="">
+                        <div class="form__control grid-col-span-12 grid-col-span-4@tablet">
                             <label for="cpf">CPF</label>
                             <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required data-mask="cpf" maxlength="14" autocomplete="off" aria-describedby="cpf-help">
-                            <span class="" id="cpf-help">O CPF deve estar completo e no formato 000.000.000-00.</span>
+                            <span class="form__error-message" id="cpf-help">O CPF deve estar completo e no formato 000.000.000-00.</span>
                         </div>
 
-                        <div class="">
+                        <div class="form__control grid-col-span-12 grid-col-span-4@tablet">
                             <label for="telefone">Telefone</label>
                             <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" pattern="\(\d{2}\) \d{4,5}-\d{4}" required data-mask="telefone" maxlength="15" autocomplete="tel" aria-describedby="telefone-help">
-                            <span class="" id="telefone-help">O telefone deve estar completo e incluir o DDD.</span>
+                            <span class="form__error-message" id="telefone-help">O telefone deve estar completo e incluir o DDD.</span>
                         </div>
 
-                        <div class="">
+                        <div class="form__control grid-col-span-12 grid-col-span-4@tablet">
                             <label for="nascimento">Data de Nascimento</label>
                             <input type="date" id="nascimento" name="nascimento" max="2007-10-21" required autocomplete="bday" aria-describedby="nascimento-help"> 
-                            <span class="" id="nascimento-help">Data de nascimento obrigatória. Você deve ser maior de 18 anos.</span>
+                            <span class="form__error-message" id="nascimento-help">Data de nascimento obrigatória. Você deve ser maior de 18 anos.</span>
                         </div>
                     </fieldset>
 
                     <!-- Endereço -->
-                    <fieldset class="">
-                        <legend class="">Endereço</legend>
+                    <fieldset class="form__group grid-layout">
+                        <legend class="form__legend">Endereço</legend>
                         
-                        <div class="">
+                        <div class="form__control grid-col-span-12 grid-col-span-3@tablet">
                             <label for="cep">CEP</label>
                             <input type="text" id="cep" name="cep" placeholder="00000-000" pattern="\d{5}-\d{3}" required data-mask="cep" maxlength="9" autocomplete="postal-code" aria-describedby="cep-help">
-                            <span class="" id="cep-help">O CEP deve estar no formato 00000-000.</span>
+                            <span class="form__error-message" id="cep-help">O CEP deve estar no formato 00000-000.</span>
                         </div>
 
-                        <div class="">
+                        <div class="form__control grid-col-span-12 grid-col-span-9@tablet">
                             <label for="endereco">Endereço (Rua, Avenida, Número)</label>
                             <input type="text" id="endereco" name="endereco" placeholder="Rua Exemplo, 123" required autocomplete="street-address" aria-describedby="endereco-help">
-                            <span class="" id="endereco-help">O endereço completo é obrigatório.</span>
+                            <span class="form__error-message" id="endereco-help">O endereço completo é obrigatório.</span>
                         </div>
                     </fieldset>
 
                     <!-- Localidade --> 
-                    <fieldset class="">
-                        <legend class="">Localidade</legend>
-                        <div class="">
+                    <fieldset class="form__group grid-layout">
+                        <legend class="form__legend">Localidade</legend>
+                        <div class="form__control grid-col-span-12 grid-col-span-6@desktop">
                             <label for="cidade">Cidade</label>
                             <input type="text" id="cidade" name="cidade" required autocomplete="address-level2" aria-describedby="cidade-help">
-                            <span class="" id="cidade-help">Informe o nome da sua cidade.</span>
+                            <span class="form__error-message" id="cidade-help">Informe o nome da sua cidade.</span>
                         </div>
 
-                        <div class="">
+                        <div class="form__control grid-col-span-12 grid-col-span-6@desktop">
                             <label for="estado">Estado</label>
                             <select id="estado" name="estado" required autocomplete="address-level1" aria-describedby="estado-help">
                                 <option value="" disabled selected>Selecione o Estado</option>
@@ -91,20 +91,20 @@
                                 <option value="SP">São Paulo</option>
                                 <option value="RJ">Rio de Janeiro</option>
                             </select>
-                            <span class="" id="estado-help">Selecione o Estado.</span>
+                            <span class="form__error-message" id="estado-help">Selecione o Estado.</span>
                         </div>
                     </fieldset>
                     
-                    <div class="">
-                        <button type="submit" class="">Finalizar Cadastro</button>
+                    <div class="form__control grid-col-span-12">
+                        <button type="submit" class="button button--primary button--large">Finalizar Cadastro</button>
                     </div>
 
-                    <div id="" class="toast" role="alert" aria-live="assertive" hidden></div>
+                    <div id="feedback-message" class="toast" role="alert" aria-live="assertive" hidden></div>
 
                 </form>
             </section>
 
-            <footer class="">
+            <footer class="footer grid-col-span-12">
                 </footer>
         </div>
     </main>
