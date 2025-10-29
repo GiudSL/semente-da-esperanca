@@ -4,94 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Missão, Visão e Valores | Semente da Esperança</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/style.css">
     <meta name="description" content="Conheça a missão, visão, valores e o impacto da Semente da Esperança.">
     <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
 </head>
 <body>
 
     <!-- Barra de navegação -->
-    <header class="">
-        <div class="">
-            <a href="index.html" class="" aria-label="Semente da Esperança - Voltar para o início">Semente da Esperança</a>
+    <header class="header">
+        <div class="container header__content">
+            <a href="index.html" class="logo" aria-label="Semente da Esperança - Voltar para o início">Semente da Esperança</a>
 
             <!-- Menu -->
-            <nav class="" id="">
-                <button class="" aria-controls="menu-list" aria-expanded="false" aria-label="Abrir menu de navegação">
-                    <span class=""></span>
+            <nav class="nav" id="main-nav">
+                <button class="menu-toggle" aria-controls="menu-list" aria-expanded="false" aria-label="Abrir menu de navegação">
+                    <span class="hamburguer"></span>
                 </button>
-                <ul class="" id="" aria-expanded="false">
-                    <li class=""><a href="index.html" class="">Início</a></li>
-                    <li class="">
-                        <a href="pages/projetos.html" class="" aria-expanded="false" aria-haspopup="true" role="button">Projetos & Ações <span class="arrow-down" aria-hidden="true"></span></a>
-                        <ul class="" aria-label="Submenu Projetos e Ações">
-                            <li><a href="pages/projetos.html#projetos" class="">Nossos Projetos</a></li>
-                            <li><a href="pages/projetos.html#voluntariado" class="">Seja Voluntário</a></li>
-                            <li><a href="pages/projetos.html#doacoes" class="">Faça uma Doação</a></li>
+                <ul class="nav__list" id="menu-list" aria-expanded="false">
+                    <li class="nav__item"><a href="index.html" class="nav__link active">Início</a></li>
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="pages/projetos.html" class="nav__link nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true" role="button">Projetos & Ações <span class="arrow-down" aria-hidden="true"></span></a>
+                        <ul class="submenu" aria-label="Submenu Projetos e Ações">
+                            <li><a href="pages/projetos.html#projetos" class="submenu__link">Nossos Projetos</a></li>
+                            <li><a href="pages/projetos.html#voluntariado" class="submenu__link">Seja Voluntário</a></li>
+                            <li><a href="pages/projetos.html#doacoes" class="submenu__link">Faça uma Doação</a></li>
                         </ul>
                     </li>
-                    <li class=""><a href="pages/cadastro.html" class="">Cadastre-se</a></li>
-                    <li class=""><a href="#" class="">Área Admin / Login</a></li>
+                    <li class="nav__item"><a href="pages/cadastro.html" class="nav__link">Cadastre-se</a></li>
+                    <li class="nav__item nav__item--cta"><a href="#" class="nav__link button button--primary">Área Admin / Login</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main id="">
-        <div class="">
+    <main id="main-content">
+        <div class="grid-layout container">
 
             <!-- Titulo/sub -->
-            <section class="" aria-labelledby="hero-title">
+            <section class="hero hero--home grid-col-span-12" aria-labelledby="hero-title">
                 <h1 id="hero-title">Transformando Vidas Através da Ação Social.</h1>
-                <p class="">Nossa missão é impactar positivamente a comunidade. Conheça nosso trabalho e junte-se a nós!</p>
+                <p class="lead">Nossa missão é impactar positivamente a comunidade. Conheça nosso trabalho e junte-se a nós!</p>
 
                 <!-- Ações -->
-                <div class="">
-                    <a href="pages/projetos.html#doacoes" class="">Doe Agora</a>
-                    <a href="pages/projetos.html#voluntariado" class="">Seja Voluntário</a>
+                <div class="hero__actions">
+                    <a href="pages/projetos.html#doacoes" class="button button--large button--cta button--secondary">Doe Agora</a>
+                    <a href="pages/projetos.html#voluntariado" class="button button--large button--primary">Seja Voluntário</a>
                 </div>
             </section>
 
-            <section class="" aria-labelledby="institutional-title">
-                <h2 id="institutional-title" class="">Nossos Pilares</h2>
-                <div class="">
+            <section class="section section--institutional grid-col-span-12" aria-labelledby="institutional-title">
+                <h2 id="institutional-title" class="section__title text-center">Nossos Pilares</h2>
+                <div class="grid-layout grid-layout--3-cols">
 
                     <!-- Missão -->
-                    <article class="" aria-labelledby="missao-title">
-                        <h3 id="missao-title" class="">Missão</h3>
+                    <article class="card card--pillar grid-col-span-12 grid-col-span-4@tablet" aria-labelledby="missao-title">
+                        <h3 id="missao-title" class="card__title">Missão</h3>
                         <p>Prover suporte, educação e oportunidades, garantindo dignidade e um futuro melhor para todos.</p>
                     </article>
                     
                     <!-- Visão -->
-                    <article class="" aria-labelledby="visao-title">
-                        <h3 id="visao-title" class="">Visão</h3>
+                    <article class="card card--pillar grid-col-span-12 grid-col-span-4@tablet" aria-labelledby="visao-title">
+                        <h3 id="visao-title" class="card__title">Visão</h3>
                         <p>Ser a organização social de maior impacto e transparência do país até 2030.</p>
                     </article>
                     
                     <!-- Valores -->
-                    <article class="" aria-labelledby="valores-title">
-                        <h3 id="valores-title" class="">Valores</h3>
+                    <article class="card card--pillar grid-col-span-12 grid-col-span-4@tablet" aria-labelledby="valores-title">
+                        <h3 id="valores-title" class="card__title">Valores</h3>
                         <p>Transparência, Ética, Comprometimento, Inovação Social e Humanidade.</p>
                     </article>
                 </div>
             </section>
 
             <!-- Transparencia -->
-            <section class="" aria-labelledby="transparency-title">
-                <h2 id="transparency-title" class="">Nossa Transparência</h2>
-                <div class="">
+            <section class="section section--transparency grid-col-span-12" aria-labelledby="transparency-title">
+                <h2 id="transparency-title" class="section__title">Nossa Transparência</h2>
+                <div class="flex-group">
                     <p>Acompanhe como os recursos são aplicados e o impacto gerado. Baixe nosso último relatório anual.</p>
-                    <a href="#" class="">Relatórios (PDF)</a>
+                    <a href="#" class="button button--primary button--large">Relatórios (PDF)</a>
                 </div>
             </section>
 
         </div>
     </main>
     
-    <footer class="">
-        <div class="">
-            <div class="">
-                <div class="">
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content grid-layout grid-layout--3-cols">
+                <div class="footer__col grid-col-span-12 grid-col-span-4@tablet">
                     <h3>Contato</h3>
                     <address>
                         <p>Rua da Ação, 123 - Bairro Solidário</p>
@@ -101,7 +101,7 @@
                     </address>
                 </div>
 
-                <div class="">
+                <div class="footer__col grid-col-span-12 grid-col-span-4@tablet">
                     <h3>Links Úteis</h3>
 
                     <!-- Ações -->
@@ -113,9 +113,9 @@
                     </ul>
                 </div>
 
-                 <div class="">
+                 <div class="footer__col grid-col-span-12 grid-col-span-4@tablet">
                     <h3>Siga-nos</h3>
-                    <div class="">
+                    <div class="social-links">
                         <a href="#" aria-label="Acompanhe-nos no Facebook" class="social-icon">F</a>
                         <a href="#" aria-label="Acompanhe-nos no Instagram" class="social-icon">I</a>
                         <a href="#" aria-label="Acompanhe-nos no LinkedIn" class="social-icon">L</a>
@@ -123,7 +123,7 @@
                 </div>
             </div>
 
-            <div class="">
+            <div class="footer__bottom">
                  <p>&copy; 2026 Semente da Esperança. Todos os direitos reservados. | <a href="#">Política de Privacidade</a></p>
             </div>
         </div>
