@@ -1,6 +1,6 @@
 # 🌱 Semente da Esperança: Projeto de Estudo Front-end
 
-Este é um projeto de estudo focado na criação de um website institucional para uma Organização Não Governamental (ONG), utilizando as tecnologias fundamentais do desenvolvimento web para construir uma interface responsiva e acessível.
+Este projeto de estudo tem como objetivo a criação de um site institucional Front-end completo para uma Organização Não Governamental (ONG). O foco principal foi a aplicação prática das tecnologias essenciais da web para construir uma interface responsiva, semanticamente correta e interativa.
 
 ---
 
@@ -10,17 +10,29 @@ Este é um projeto de estudo focado na criação de um website institucional par
 
 - *CSS:* CSS Variables (:root): Uso de variáveis para cores (--color-primary, --color-secondary), tipografia, espaçamento e breakpoints. Layout Responsivo: Implementação de um sistema de Grid Layout de 12 colunas (.grid-layout) com breakpoints (@tablet, @desktop) definidos em media queries.
 
+- *JS:* Interatividade e Validação: Lógica para controle do Menu de Navegação responsivo (.menu-toggle) e implementação de Máscaras de Input (CPF, Telefone, CEP) e validações básicas no formulário de cadastro.
+
 ---
 
 ## 📂 Estrutura de arquivos
 
+*A organização de arquivos segue o padrão profissional de separação de responsabilidades (Separation of Concerns):*
+
 ```
 sementedaesperanca/
-├── index.html              # Página inicial na raiz
+├── index.html              # Página inicial (na raiz)
 ├── pages/
-│   ├── cadastro.html       # Outras páginas HTML
-│   └── projetos.html
+│   ├── cadastro.html       # Formulário de Cadastro
+│   └── projetos.html       # Detalhe de Projetos e Doações
 ├── assets/                 # Contêiner para recursos estáticos
-│   ├── css/                # Arquivos de estilo (style.css)
-│   └── img/                # Arquivos de imagem (favicon.png, kids.jpg, etc.)
+│   ├── css/
+│   │   └── style.css       # Estilos globais e componentes
+│   ├── js/
+│   │   └── main.js         # Scripts de interatividade e validação
+│   └── img/                # Imagens e Ícones do projeto
+│       ├── food.jpg
+│       ├── kids.jpg
+│       ├── smile.jpg
+│       ├── tree.jpg
+│       └── favicon.png
 └── README.md
