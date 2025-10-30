@@ -165,7 +165,7 @@ a:hover, a:focus {
     }
 }
 
-/* 3. Navegação e Header */
+/* Navegação e Header */
 
 .header {
     background-color: var(--color-background-light);
@@ -362,7 +362,7 @@ a:hover, a:focus {
 .badge--info { background-color: var(--color-info); color: var(--color-text-light); }
 
 
-/* 5. Formulários Estilizados e Validação Visual */
+/* Formulários Estilizados e Validação Visual */
 
 .form__group {
     border: 1px solid #e0e0e0;
@@ -577,4 +577,87 @@ select:valid:not([value=""]) {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+/* Modo Escuro */
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Inversão de Cores Principais */
+        --color-text-dark: #f8f9fa;        /* Texto Principal CLARO */
+        --color-text-light: #333;          /* Texto Claro ESCURO */
+        --color-background-light: #121212;  /* Fundo CLARO Vira ESCURO */
+        --color-background-gray: #1e1e1e;   /* Fundo Secundário Vira Escuro */
+
+        /* Cores de Ação (Ajustadas para ter contraste no fundo escuro) */
+        --color-primary: #6cbaff;       /* Azul mais claro */
+        --color-primary-dark: #a0cfff;  /* Foco/Hover mais claro */
+        --color-secondary: #7bc96f;     /* Verde mais claro */
+        --color-secondary-dark: #90ee90;/* Foco/Hover mais claro */
+        --color-tertiary: #ffdb7f;      /* Amarelo mais claro (foco) */
+        --color-error: #ff6b6b;         /* Vermelho mais claro */
+    }
+
+    /* Ajustes Específicos de Componentes */
+
+    /* Fundo do Header */
+    .header {
+        background-color: var(--color-background-gray);
+        box-shadow: var(--shadow-md);
+    }
+    
+    /* Ajuste para Cards e Submenus */
+    .card, .nav__list {
+        background-color: var(--color-background-gray);
+        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15); /* Sombra mais clara */
+    }
+    .card--pillar {
+        border-top-color: var(--color-primary); 
+    }
+    
+    /* Fundo de Doações */
+    .donation-metrics, .radio-card[aria-checked="true"] {
+        background-color: #2a2a2a;
+    }
+    .radio-card:hover {
+        background-color: #2a2a2a;
+    }
+
+    /* Footer */
+    .footer {
+        background-color: #000;
+    }
+}
+
+/* Sobrescreve estilos quando o modo de alto contraste é ativo */
+@media (forced-colors: active) {
+    /* Foco: usa a cor do texto do sistema para garantir visibilidade */
+    :focus {
+        outline-color: ButtonText;
+    }
+    
+    /* Links com sublinhado explícito */
+    a {
+        text-decoration: underline;
+    }
+
+    /* Botões */
+    .button {
+        color: ButtonText !important;
+        background-color: ButtonFace !important;
+        border: 2px solid ButtonText !important;
+    }
+    .button:hover, .button:focus {
+        background-color: Highlight !important;
+        color: HighlightText !important;
+    }
+    
+    /* Elementos de formulário */
+    input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select, textarea, input[type="number"] {
+        border: 1px solid WindowText;
+    }
+    
+    /* Ícones do menu hamburguer */
+    .hamburguer, .hamburguer::before, .hamburguer::after {
+        background-color: ButtonText;
+    }
 }
